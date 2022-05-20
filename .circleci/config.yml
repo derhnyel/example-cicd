@@ -14,8 +14,5 @@ jobs:
           name: Install SAM
           command: sudo pip install aws-sam-cli
       - run:
-          name: Create S3 Bucket
-          command: aws s3api create-bucket --bucket serverless-cicd-example-practise-today --region us-east-1
-      - run:
           name: Deploy with SAM 
           command: sam deploy --s3-bucket serverless-cicd-example-practise-today --stack-name example-cicd-project --region us-east-1 --capabilities CAPABILITY_IAM --parameter-overrides MyPhoneNumber=$MY_PHONE_NUMBER
