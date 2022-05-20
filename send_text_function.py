@@ -27,4 +27,5 @@ def publish_sns_update(text_message):
   )
 
   return response
+#hi  
 #aws s3api create-bucket --bucket serverless-cicd-example --region us-east-1
